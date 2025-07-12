@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StackIt_Home</title>
+  <link rel="stylesheet" href="home.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>StackIt</h1>
+      <div class="top-controls">
+        <span class="user-tag">Sophisticated Meerkat</span>
+        <a href="login.html"><button class="login-btn">Login</button></a>
+      </div>
+    </header>
+
+    <div class="filters">
+      <button class="ask-btn">Ask New Question</button>
+      <div class="filter-group">
+        <select name="more" id="filter-btn-more" class="filter-btn" title="More">
+            <option value="Newest unanswered" selected>Newest unanswered</option>
+            <option value="Newest answered">Newest answered</option>
+            <option value="Oldest questions">Oldest questions</option>
+        </select>
+      </div>
+      <input type="text" placeholder="Search" class="search-box"/>
+    </div>
+
+    <main class="questions-list">
+      <div class="question">
+        <div class="question-header">
+          <h3>How to join 2 columns in a data set to make a separate column in SQL</h3>
+          <span class="answer-count">5 ans</span>
+        </div>
+        <div class="meta">
+          <div class="tags">
+            <button>SQL</button>
+          </div>
+          <p class="description">I do not know the code for it as I am a beginner. As an example...</p>
+          <span class="username">User Name</span>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-header">
+          <h3>Question.....</h3>
+          <span class="answer-count">3 ans</span>
+        </div>
+        <div class="meta">
+          <div class="tags">
+            <button>React</button>
+            <button>Frontend</button>
+          </div>
+          <p class="description">Descriptions....</p>
+          <span class="username">User Name</span>
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="question-header">
+          <h3>Question.....</h3>
+          <span class="answer-count">2 ans</span>
+        </div>
+        <div class="meta">
+          <div class="tags">
+            <button>Python</button>
+          </div>
+          <p class="description">Descriptions....</p>
+          <span class="username">User Name</span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pagination">
+      <button>&lt;</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>&gt;</button>
+    </footer>
+  </div>
+</body>
+</html>

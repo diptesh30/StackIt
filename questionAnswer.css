@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.user {
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  border-radius: 50%;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.breadcrumb a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+/* Question */
+.question-detail {
+  margin-bottom: 25px;
+}
+
+.question-detail h2 {
+  margin-bottom: 10px;
+}
+
+.question-detail .tags {
+  margin-bottom: 10px;
+}
+
+.question-detail .tags button {
+  background: #333;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.description {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Answers */
+.answers-section {
+  margin-top: 20px;
+}
+
+.answer {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.vote-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.vote-count {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.answer-text {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+/* Submit Answer */
+.submit-answer {
+  margin-top: 40px;
+}
+
+#editor {
+  height: 150px;
+  background: white;
+  color: black;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 10px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#editor-toolbar {
+  border-radius: 6px 6px 0 0;
+}
+
+#submit-answer-btn {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#submit-answer-btn:hover {
+  background: #005fa3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .answer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #editor {
+    height: 120px;
+  }
+}
